@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Favorite Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #14213d;
+      --accent-color: #fca311;
+      --light-color: #e5e5e5;
+      --text-color: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1em 0;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1em;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4em 1em;
+      background-color: var(--accent-color);
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.8em 1.5em;
+      font-size: 1em;
+      border-radius: 0.5em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #000814;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      color: var(--primary-color);
+    }
+
+    #services .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1em;
+      padding-top: 1em;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 1em;
+      border-radius: 1em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-start;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .card-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>My Favorite Website</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Welcome to the Best Site Ever</h2>
+      <p>Your one-stop solution for everything amazing.</p>
+      <button>Get Started</button>
+    </section>
+
+    <section id="about">
+      <h3>About Us</h3>
+      <p>We are passionate about delivering high-quality web experiences.</p>
+    </section>
+
+    <section id="services">
+      <h3>Our Services</h3>
+      <div class="card-container">
+        <div class="card">Web Development</div>
+        <div class="card">UI/UX Design</div>
+        <div class="card">SEO Optimization</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Favorite Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
