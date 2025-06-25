@@ -15,8 +15,4 @@ This is a responsive, modern, and stylish version of a basic HTML website. It de
 
 This fun and interactive section helps reinforce your understanding of **CSS Flexbox**, a core skill for front-end developers.
 
-> Guide Froggy to his lily pad using only Flexbox powers!  
-> Try the game: [https://flexboxfroggy.com/](https://flexboxfroggy.com/)
-
-
 
