@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #e0f7fa;
+  margin: 0;
+  padding: 1em;
+}
+
+header {
+  background: #00796b;
+  color: white;
+  padding: 1em 0;
+  margin-bottom: 2em;
+}
+
+.pond {
+  background-color: #b2dfdb;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  border: 3px solid #004d40;
+  border-radius: 1em;
+  display: flex;
+
+  /* TODO: Edit this property to move the frog */
+  justify-content: flex-end;
+}
+
+.frog {
+  font-size: 3rem;
+}
+
+.lilypad {
+  font-size: 3rem;
+  margin-left: auto;
+}
+
+.hint {
+  font-style: italic;
+  margin-top: 1em;
+}
